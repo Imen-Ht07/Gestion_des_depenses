@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="gestion_depensesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Budget">
+    <Key>
+      <PropertyRef Name="ID_Budget" />
+    </Key>
+    <Property Name="ID_Budget" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Montant" Type="Double" />
+    <Property Name="Mois_Budget" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Utilisateur_Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Utilisateurs" Relationship="Self.FK__Budget__Utilisat__3C69FB99" FromRole="Budget" ToRole="Utilisateurs" />
+    <NavigationProperty Name="Transactions" Relationship="Self.FK__Transacti__Budge__403A8C7D" FromRole="Budget" ToRole="Transactions" />
+  </EntityType>
+  <EntityType Name="tirelire">
+    <Key>
+      <PropertyRef Name="ID_Tirelire" />
+    </Key>
+    <Property Name="ID_Tirelire" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Tirelire" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Montant" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="Utilisateur_Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Utilisateurs" Relationship="Self.FK__tirelire__Utilis__398D8EEE" FromRole="tirelire" ToRole="Utilisateurs" />
+  </EntityType>
+  <EntityType Name="Transactions">
+    <Key>
+      <PropertyRef Name="ID_Transactions" />
+    </Key>
+    <Property Name="ID_Transactions" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom_Transactions" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Montant" Type="Double" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Categorie" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Utilisateur_Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Budget_IDB" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Budget" Relationship="Self.FK__Transacti__Budge__403A8C7D" FromRole="Transactions" ToRole="Budget" />
+    <NavigationProperty Name="Utilisateurs" Relationship="Self.FK__Transacti__Utili__3F466844" FromRole="Transactions" ToRole="Utilisateurs" />
+  </EntityType>
+  <EntityType Name="Utilisateurs">
+    <Key>
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="Username" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nom" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Prenom" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Mot_De_Passe" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Adressemail" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Date_de_naissance" Type="DateTime" Precision="0" />
+    <Property Name="Metier" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Budget" Relationship="Self.FK__Budget__Utilisat__3C69FB99" FromRole="Utilisateurs" ToRole="Budget" />
+    <NavigationProperty Name="tirelire" Relationship="Self.FK__tirelire__Utilis__398D8EEE" FromRole="Utilisateurs" ToRole="tirelire" />
+    <NavigationProperty Name="Transactions" Relationship="Self.FK__Transacti__Utili__3F466844" FromRole="Utilisateurs" ToRole="Transactions" />
+  </EntityType>
+  <Association Name="FK__Budget__Utilisat__3C69FB99">
+    <End Role="Utilisateurs" Type="Self.Utilisateurs" Multiplicity="1" />
+    <End Role="Budget" Type="Self.Budget" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateurs">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Budget">
+        <PropertyRef Name="Utilisateur_Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Transacti__Budge__403A8C7D">
+    <End Role="Budget" Type="Self.Budget" Multiplicity="1" />
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Budget">
+        <PropertyRef Name="ID_Budget" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="Budget_IDB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tirelire__Utilis__398D8EEE">
+    <End Role="Utilisateurs" Type="Self.Utilisateurs" Multiplicity="1" />
+    <End Role="tirelire" Type="Self.tirelire" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateurs">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="tirelire">
+        <PropertyRef Name="Utilisateur_Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Transacti__Utili__3F466844">
+    <End Role="Utilisateurs" Type="Self.Utilisateurs" Multiplicity="1" />
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilisateurs">
+        <PropertyRef Name="Username" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="Utilisateur_Username" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="gestion_depensesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Budget" EntityType="Self.Budget" />
+    <EntitySet Name="tirelire" EntityType="Self.tirelire" />
+    <EntitySet Name="Transactions" EntityType="Self.Transactions" />
+    <EntitySet Name="Utilisateurs" EntityType="Self.Utilisateurs" />
+    <AssociationSet Name="FK__Budget__Utilisat__3C69FB99" Association="Self.FK__Budget__Utilisat__3C69FB99">
+      <End Role="Utilisateurs" EntitySet="Utilisateurs" />
+      <End Role="Budget" EntitySet="Budget" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Transacti__Budge__403A8C7D" Association="Self.FK__Transacti__Budge__403A8C7D">
+      <End Role="Budget" EntitySet="Budget" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tirelire__Utilis__398D8EEE" Association="Self.FK__tirelire__Utilis__398D8EEE">
+      <End Role="Utilisateurs" EntitySet="Utilisateurs" />
+      <End Role="tirelire" EntitySet="tirelire" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Transacti__Utili__3F466844" Association="Self.FK__Transacti__Utili__3F466844">
+      <End Role="Utilisateurs" EntitySet="Utilisateurs" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

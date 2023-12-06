@@ -1,0 +1,35 @@
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\Gestionnaire_de_depenses.exe.config
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\Gestionnaire_de_depenses.exe
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\Gestionnaire_de_depenses.pdb
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\EntityFramework.dll
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\EntityFramework.xml
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.AssemblyReference.cache
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Properties.Resources.resources
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Ajouter_Transaction.resources
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Consulter_Budget.resources
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Gestion_de_transactions.resources
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.GenerateResource.cache
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.CoreCompileInputs.cache
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.CopyComplete
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.exe
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.pdb
+C:\Users\ROGX\Source\Repos\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Login.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\Gestionnaire_de_depenses.exe.config
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\Gestionnaire_de_depenses.exe
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\bin\Debug\Gestionnaire_de_depenses.pdb
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.AssemblyReference.cache
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Properties.Resources.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.accueil.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Ajouter_Transaction.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Consulter_Budget.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Gestion_de_transactions.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Inscription.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Login.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.Vues.Tirelire.resources
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.GenerateResource.cache
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.CoreCompileInputs.cache
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.csproj.CopyComplete
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.exe
+C:\Users\yassi\OneDrive - IT Business School\Bureau\Backup\Gestionnaire_de_depenses\Gestionnaire_de_depenses\obj\Debug\Gestionnaire_de_depenses.pdb

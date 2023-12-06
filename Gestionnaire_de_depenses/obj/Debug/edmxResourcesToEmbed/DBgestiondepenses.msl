@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gestion_depensesModelStoreContainer" CdmEntityContainer="gestion_depensesEntities">
+    <EntitySetMapping Name="Budget">
+      <EntityTypeMapping TypeName="gestion_depensesModel.Budget">
+        <MappingFragment StoreEntitySet="Budget">
+          <ScalarProperty Name="ID_Budget" ColumnName="ID_Budget" />
+          <ScalarProperty Name="Montant" ColumnName="Montant" />
+          <ScalarProperty Name="Mois_Budget" ColumnName="Mois_Budget" />
+          <ScalarProperty Name="Utilisateur_Username" ColumnName="Utilisateur_Username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tirelire">
+      <EntityTypeMapping TypeName="gestion_depensesModel.tirelire">
+        <MappingFragment StoreEntitySet="tirelire">
+          <ScalarProperty Name="ID_Tirelire" ColumnName="ID_Tirelire" />
+          <ScalarProperty Name="Nom_Tirelire" ColumnName="Nom_Tirelire" />
+          <ScalarProperty Name="Montant" ColumnName="Montant" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Utilisateur_Username" ColumnName="Utilisateur_Username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transactions">
+      <EntityTypeMapping TypeName="gestion_depensesModel.Transactions">
+        <MappingFragment StoreEntitySet="Transactions">
+          <ScalarProperty Name="ID_Transactions" ColumnName="ID_Transactions" />
+          <ScalarProperty Name="Nom_Transactions" ColumnName="Nom_Transactions" />
+          <ScalarProperty Name="Montant" ColumnName="Montant" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Categorie" ColumnName="Categorie" />
+          <ScalarProperty Name="Utilisateur_Username" ColumnName="Utilisateur_Username" />
+          <ScalarProperty Name="Budget_IDB" ColumnName="Budget_IDB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Utilisateurs">
+      <EntityTypeMapping TypeName="gestion_depensesModel.Utilisateurs">
+        <MappingFragment StoreEntitySet="Utilisateurs">
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Mot_De_Passe" ColumnName="Mot_De_Passe" />
+          <ScalarProperty Name="Adressemail" ColumnName="Adressemail" />
+          <ScalarProperty Name="Date_de_naissance" ColumnName="Date_de_naissance" />
+          <ScalarProperty Name="Metier" ColumnName="Metier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
